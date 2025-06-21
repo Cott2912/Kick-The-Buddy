@@ -902,7 +902,7 @@ textarea {
     }
 }
 
-.header.is-visible {
+.header{
     background: var(--white);
     -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .04);
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .04);
@@ -2458,7 +2458,7 @@ textarea {
     z-index: 1
 }
 
-.post__share-popup.is-visible {
+.post__share-popup{
     -webkit-animation: share-popup .48s cubic-bezier(.17, .67, .6, 1.34) backwards;
     animation: share-popup .48s cubic-bezier(.17, .67, .6, 1.34) backwards;
     display: block
@@ -3136,7 +3136,7 @@ textarea {
     width: 23px
 }
 
-.footer__bttop.is-visible {
+.footer__bttop{
     visibility: visible;
     opacity: 1
 }
