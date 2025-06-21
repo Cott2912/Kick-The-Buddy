@@ -4,14 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta content="noindex,nofollow" name="robots">
     <title>Action Games-Solar Smash Online</title>
     <meta name="description" content="Play Free on Solar Smash Online">
     <meta name="generator" content="Publii Open-Source CMS for Static Site">
-    <link rel="stylesheet" href="./../media/plugins/staticSearch/static.search.min.css">
-    <link rel="shortcut icon" href="./../media/website/favicon-1.ico" type="image/x-icon">
-    <link rel="next" href="./../action/page/2/index.html">
-    <link rel="stylesheet" href="./../assets/css/style.css?v=1efb486b1d1dfcca462baef5c982405a">
+    <link rel="stylesheet" href="/../media/plugins/staticSearch/static.search.min.css">
+    <link rel="shortcut icon" href="/../media/website/favicon-1.ico" type="image/x-icon">
+    <link rel="next" href="/../action/page/2/index.html">
+    <link rel="stylesheet" href="/../assets/css/style.css?v=1efb486b1d1dfcca462baef5c982405a">
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -24,164 +25,7 @@
     <script>
         window.wgAutoMidroll = false;
     </script>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <script type="text/javascript" async>
-        if (window.location.pathname.includes("game-developers.html") == false) {
-            if (window.location.pathname.includes("index.html.abc") == false) {
-                ! function (e, t) {
-                    a = e.createElement("script"), m = e.getElementsByTagName("script")[0], a.async = 1, a.src = t, m.parentNode.insertBefore(a, m)
-                }(document, "https://universal.wgplayer.com/tag/?lh=" + window.location.hostname + "&wp=" + window.location.pathname + "&ws=" + window.location.search);
-            }
-        }
-    </script>
-    <script>
-        (function () {
-            // Check the domain name
-            var scriptSrc, configId;
 
-            if (window.location.hostname === 'unblocked-games.s3-accelerate.amazonaws.com') {
-                // Google Analytics ID for unblocked-games.s3-accelerate.amazonaws.com
-                scriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-S5X25J1HQ5';
-                configId = 'G-S5X25J1HQ5';
-            } else {
-                if (window.location.hostname === 'freezenova.github.io') {
-                    // Google Analytics ID for freezenova.github.io
-                    scriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-YXFREC5MSS';
-                    configId = 'G-YXFREC5MSS';
-                } else {
-                    if (window.location.hostname === 'd9k5uuutyxogn.cloudfront.net') {
-                        // Google Analytics ID for d9k5uuutyxogn.cloudfront.net
-                        scriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-KLY0GTQKFT';
-                        configId = 'G-KLY0GTQKFT';
-                    } else {
-                        // Google Analytics ID for other domains
-                        scriptSrc = 'https://www.googletagmanager.com/gtag/js?id=G-Z1FT2YYNFS';
-                        configId = 'G-Z1FT2YYNFS';
-                    }
-                }
-            }
-
-            // Create the script element for Google Analytics
-            var gaScript = document.createElement('script');
-            gaScript.async = true;
-            gaScript.src = scriptSrc;
-            document.head.appendChild(gaScript);
-
-            // Create the script element for gtag configuration
-            gaScript.onload = function () {
-                window.dataLayer = window.dataLayer || [];
-
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
-                gtag('config', configId);
-            };
-        })();
-    </script>
-    <script>
-        function redirectToIndex() {
-            var currentUrl = window.location.href;
-            var path = window.location.pathname;
-            var hostname = window.location.hostname;
-
-            if (hostname === 'freezenova.github.io') {
-                if (path.endsWith('/') && !path.endsWith('/index.html')) {
-                    window.location.replace(currentUrl + 'index.html');
-                }
-            }
-        }
-
-        redirectToIndex();
-    </script>
-    <script>
-        (function () {
-            if (window.location.hostname !== 'freezenova.s3.amazonaws.com' &&
-                window.location.hostname !== 'unblocked-games.s3.amazonaws.com') {
-                var canonicalLink = document.createElement('link');
-                canonicalLink.rel = 'canonical';
-
-                if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-                    if (window.location.hostname !== 'freezenova.github.io') {
-                        canonicalLink.href = 'https://unblocked-games.s3.amazonaws.com/index.html';
-                        document.head.appendChild(canonicalLink);
-                    }
-                } else {
-                    canonicalLink.href = 'https://unblocked-games.s3.amazonaws.com' + window.location.pathname;
-                    document.head.appendChild(canonicalLink);
-                }
-            }
-        })();
-    </script>
-    <script>
-        // List of allowed domains
-        var allowedDomains = [
-            'unblocked-games.s3.amazonaws.com',
-            'unblocked-games.s3-accelerate.amazonaws.com',
-            'freezenova.github.io'
-        ];
-
-        // Function to add meta tags for specific domains and paths
-        function addMetaTags() {
-            var hostname = window.location.hostname;
-            var pathname = window.location.pathname;
-
-            // Check if the current hostname is not in the allowed list
-            // and the pathname is not exactly the root or root index.html
-            if (!allowedDomains.includes(hostname)) {
-                // Create meta tag for noindex
-                var metaNoIndexNoFollow = document.createElement('meta');
-                metaNoIndexNoFollow.setAttribute('name', 'robots');
-                metaNoIndexNoFollow.setAttribute('content', 'noindex, nofollow');
-
-                // Append the meta tag to the head
-                document.head.appendChild(metaNoIndexNoFollow);
-            }
-        }
-
-        // Function to update the page title to include the domain name
-        function updatePageTitle() {
-            var hostname = window.location.hostname;
-
-            // Check if the current hostname is not in the allowed list
-            if (!allowedDomains.includes(hostname)) {
-                if (hostname == 'd9k5uuutyxogn.cloudfront.net') {
-                    var currentTitle = document.title;
-                    document.title = `${currentTitle} - Cloud`;
-                } else {
-                    //var currentTitle = document.title;
-                    //document.title = `${currentTitle} - ${hostname}`;
-                }
-            } else if (hostname == 'unblocked-games.s3-accelerate.amazonaws.com') {
-                var currentTitle = document.title;
-                document.title = `${currentTitle} Accelerate`;
-            }
-
-        }
-
-        function updatePageH1() {
-            document.addEventListener('DOMContentLoaded', (event) => {
-                const firstHeading = document.querySelector('h1');
-                if (firstHeading) {
-                    var hostname = window.location.hostname;
-                    if (!allowedDomains.includes(hostname)) {
-                        if (hostname == 'd9k5uuutyxogn.cloudfront.net') {
-                            firstHeading.innerHTML += ' <sup>Cloud</sup>';
-                        } else {
-                            //firstHeading.innerHTML += ` <sup>${hostname}</sup>`;
-                        }
-                    } else if (hostname == 'unblocked-games.s3-accelerate.amazonaws.com') {
-                        firstHeading.innerHTML += ' <sup>Accelerate</sup>';
-                    }
-                }
-            });
-        }
-
-        // Call the functions
-        updatePageTitle();
-        addMetaTags();
-        updatePageH1();
-    </script>
 </head>
 
 <body style="background-color: rgb(127, 183, 240);">
@@ -199,7 +43,7 @@
                 <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
                     d="M2 5C2 4.44772 2.44772 4 3 4H15C15.5523 4 16 4.44772 16 5C16 5.55228 15.5523 6 15 6H3C2.44772 6 2 5.55228 2 5ZM2 12C2 11.4477 2.44772 11 3 11L21 11C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13L3 13C2.44772 13 2 12.5523 2 12ZM2 19C2 18.4477 2.44772 18 3 18L21 18C21.5523 18 22 18.4477 22 19C22 19.5523 21.5523 20 21 20L3 20C2.44772 20 2 19.5523 2 19Z">
                 </path>
-            </svg></button> <a href="./../index.html" class="logo">Solar Smash Online</a>
+            </svg></button> <a href="/../index.html" class="logo">Solar Smash Online</a>
         <nav class="sidebar"><button class="close" type="button"><svg viewBox="0 0 24 24" focusable="false"
                     aria-hidden="true" class="close_svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -207,34 +51,34 @@
                     </path>
                 </svg></button>
             <ul class="navbar__menu">
-                <li><a href="./../index.html" target="_self">Home</a></li>
-                <li><a href="./../recently-played-games.html" target="_self">Recently Played</a></li>
-                <li><a href="./../new-games.html" target="_self">New</a></li>
-                <li><a href="./../2-player/index.html" target="_self">2 Player</a></li>
-                <li><a href="./../2d/index.html" target="_self">2D</a></li>
-                <li><a href="./../3d/index.html" target="_self">3D</a></li>
-                <li class="active"><a href="./../action/index.html" target="_self">Action</a></li>
-                <li><a href="./../adventure/index.html" target="_self">Adventure</a></li>
-                <li><a href="./../arcade/index.html" target="_self">Arcade</a></li>
-                <li><a href="./../car/index.html" target="_self">Car</a></li>
-                <li><a href="./../clicker/index.html" target="_self">Clicker</a></li>
-                <li><a href="./../crazy/index.html" target="_self">Crazy</a></li>
-                <li><a href="./../drift/index.html" target="_self">Drift</a></li>
-                <li><a href="./../driving/index.html" target="_self">Driving</a></li>
-                <li><a href="./../girl/index.html" target="_self">Girl</a></li>
-                <li><a href="./../io-games/index.html" target="_self">io Games</a></li>
-                <li><a href="./../kids/index.html" target="_self">Kids</a></li>
-                <li><a href="./../minecraft/index.html" target="_self">Minecraft</a></li>
-                <li><a href="./../mobile/index.html" target="_self">Mobile</a></li>
-                <li><a href="./../multiplayer/index.html" target="_self">Multiplayer</a></li>
-                <li><a href="./../pixel/index.html" target="_self">Pixel</a></li>
-                <li><a href="./../puzzle/index.html" target="_self">Puzzle</a></li>
-                <li><a href="./../racing/index.html" target="_self">Racing</a></li>
-                <li><a href="./../shooting/index.html" target="_self">Shooting</a></li>
-                <li><a href="./../simulator/index.html" target="_self">Simulator</a></li>
-                <li><a href="./../sniper/index.html" target="_self">Sniper</a></li>
-                <li><a href="./../sports/index.html" target="_self">Sports</a></li>
-                <li><a href="./../strategy/index.html" target="_self">Strategy</a></li>
+                <li><a href="/../index.html" target="_self">Home</a></li>
+                <li><a href="/../recently-played-games.html" target="_self">Recently Played</a></li>
+                <li><a href="/../new-games.html" target="_self">New</a></li>
+                <li><a href="/../2-player/index.html" target="_self">2 Player</a></li>
+                <li><a href="/../2d/index.html" target="_self">2D</a></li>
+                <li><a href="/../3d/index.html" target="_self">3D</a></li>
+                <li class="active"><a href="/../action/index.html" target="_self">Action</a></li>
+                <li><a href="/../adventure/index.html" target="_self">Adventure</a></li>
+                <li><a href="/../arcade/index.html" target="_self">Arcade</a></li>
+                <li><a href="/../car/index.html" target="_self">Car</a></li>
+                <li><a href="/../clicker/index.html" target="_self">Clicker</a></li>
+                <li><a href="/../crazy/index.html" target="_self">Crazy</a></li>
+                <li><a href="/../drift/index.html" target="_self">Drift</a></li>
+                <li><a href="/../driving/index.html" target="_self">Driving</a></li>
+                <li><a href="/../girl/index.html" target="_self">Girl</a></li>
+                <li><a href="/../io-games/index.html" target="_self">io Games</a></li>
+                <li><a href="/../kids/index.html" target="_self">Kids</a></li>
+                <li><a href="/../minecraft/index.html" target="_self">Minecraft</a></li>
+                <li><a href="/../mobile/index.html" target="_self">Mobile</a></li>
+                <li><a href="/../multiplayer/index.html" target="_self">Multiplayer</a></li>
+                <li><a href="/../pixel/index.html" target="_self">Pixel</a></li>
+                <li><a href="/../puzzle/index.html" target="_self">Puzzle</a></li>
+                <li><a href="/../racing/index.html" target="_self">Racing</a></li>
+                <li><a href="/../shooting/index.html" target="_self">Shooting</a></li>
+                <li><a href="/../simulator/index.html" target="_self">Simulator</a></li>
+                <li><a href="/../sniper/index.html" target="_self">Sniper</a></li>
+                <li><a href="/../sports/index.html" target="_self">Sports</a></li>
+                <li><a href="/../strategy/index.html" target="_self">Strategy</a></li>
                 <li><a href="https://freezenova.blog" target="_self">Subscribe</a></li>
             </ul>
         </nav>
@@ -263,10 +107,10 @@
                                 alt="Crazy Christmas 3D Solar Smash Online"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../crazy-christmas-3d.html">Crazy Christmas 3D</a>
+                                <div class="c-card__title"><a href="/../crazy-christmas-3d.html">Crazy Christmas 3D</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../battle-royale/index.html"
+                            <footer class="c-card__meta"><a href="/../battle-royale/index.html"
                                     class="c-card__tag">Battle Royale</a></footer>
                         </div>
                     </div>
@@ -279,9 +123,9 @@
                                 alt="Crazy Cattle 3D Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../crazy-cattle-3d.html">Crazy Cattle 3D</a></div>
+                                <div class="c-card__title"><a href="/../crazy-cattle-3d.html">Crazy Cattle 3D</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../battle-royale/index.html"
+                            <footer class="c-card__meta"><a href="/../battle-royale/index.html"
                                     class="c-card__tag">Battle Royale</a></footer>
                         </div>
                     </div>
@@ -294,9 +138,9 @@
                                 alt="Rooftop Duel Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../rooftop-duel.html">Rooftop Duel</a></div>
+                                <div class="c-card__title"><a href="/../rooftop-duel.html">Rooftop Duel</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../gun/index.html" class="c-card__tag">Gun</a>
+                            <footer class="c-card__meta"><a href="/../gun/index.html" class="c-card__tag">Gun</a>
                             </footer>
                         </div>
                     </div>
@@ -309,10 +153,10 @@
                                 alt="Stickman GTA City Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../stickman-gta-city.html">Stickman GTA City</a>
+                                <div class="c-card__title"><a href="/../stickman-gta-city.html">Stickman GTA City</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../simulator/index.html"
+                            <footer class="c-card__meta"><a href="/../simulator/index.html"
                                     class="c-card__tag">Simulator</a></footer>
                         </div>
                     </div>
@@ -325,10 +169,10 @@
                                 alt="Monster Survivors Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../monster-survivors.html">Monster Survivors</a>
+                                <div class="c-card__title"><a href="/../monster-survivors.html">Monster Survivors</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -341,9 +185,9 @@
                                 alt="WarStrike Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../warstrike.html">WarStrike</a></div>
+                                <div class="c-card__title"><a href="/../warstrike.html">WarStrike</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -356,10 +200,10 @@
                                 alt="Masked Special Forces Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../masked-special-forces.html">Masked Special
+                                <div class="c-card__title"><a href="/../masked-special-forces.html">Masked Special
                                         Forces</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -372,9 +216,9 @@
                                 alt="GTA Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../gta-simulator.html">GTA Simulator</a></div>
+                                <div class="c-card__title"><a href="/../gta-simulator.html">GTA Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../simulator/index.html"
+                            <footer class="c-card__meta"><a href="/../simulator/index.html"
                                     class="c-card__tag">Simulator</a></footer>
                         </div>
                     </div>
@@ -387,10 +231,10 @@
                                 alt="Crazy Shooters 2 Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../crazy-shooters-2.html">Crazy Shooters 2</a>
+                                <div class="c-card__title"><a href="/../crazy-shooters-2.html">Crazy Shooters 2</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -403,9 +247,9 @@
                                 alt="Archer Hero Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../archer-hero.html">Archer Hero</a></div>
+                                <div class="c-card__title"><a href="/../archer-hero.html">Archer Hero</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -418,9 +262,9 @@
                                 alt="SpartaHoppers Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../spartahoppers.html">SpartaHoppers</a></div>
+                                <div class="c-card__title"><a href="/../spartahoppers.html">SpartaHoppers</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -433,10 +277,10 @@
                                 alt="Swords and Souls Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../swords-and-souls.html">Swords and Souls</a>
+                                <div class="c-card__title"><a href="/../swords-and-souls.html">Swords and Souls</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../flash/index.html" class="c-card__tag">Flash</a>
+                            <footer class="c-card__meta"><a href="/../flash/index.html" class="c-card__tag">Flash</a>
                             </footer>
                         </div>
                     </div>
@@ -449,9 +293,9 @@
                                 alt="FPS Strike Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../fps-strike.html">FPS Strike</a></div>
+                                <div class="c-card__title"><a href="/../fps-strike.html">FPS Strike</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -464,9 +308,9 @@
                                 alt="Rebel Forces Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../rebel-forces.html">Rebel Forces</a></div>
+                                <div class="c-card__title"><a href="/../rebel-forces.html">Rebel Forces</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -479,9 +323,9 @@
                                 alt="ArmedForces.io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../armedforces-io.html">ArmedForces.io</a></div>
+                                <div class="c-card__title"><a href="/../armedforces-io.html">ArmedForces.io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -494,9 +338,9 @@
                                 alt="ForceZ.io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../forcez-io.html">ForceZ.io</a></div>
+                                <div class="c-card__title"><a href="/../forcez-io.html">ForceZ.io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../io-games/index.html" class="c-card__tag">io
+                            <footer class="c-card__meta"><a href="/../io-games/index.html" class="c-card__tag">io
                                     Games</a></footer>
                         </div>
                     </div>
@@ -509,9 +353,9 @@
                                 alt="Shadow Strike Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../shadow-strike.html">Shadow Strike</a></div>
+                                <div class="c-card__title"><a href="/../shadow-strike.html">Shadow Strike</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -524,9 +368,9 @@
                                 alt="Bad Dolls Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../bad-dolls.html">Bad Dolls</a></div>
+                                <div class="c-card__title"><a href="/../bad-dolls.html">Bad Dolls</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../2-player/index.html" class="c-card__tag">2
+                            <footer class="c-card__meta"><a href="/../2-player/index.html" class="c-card__tag">2
                                     Player</a></footer>
                         </div>
                     </div>
@@ -539,9 +383,9 @@
                                 alt="Pixel Survival Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../pixel-survival.html">Pixel Survival</a></div>
+                                <div class="c-card__title"><a href="/../pixel-survival.html">Pixel Survival</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -554,9 +398,9 @@
                                 alt="Tank Arena Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../tank-arena.html">Tank Arena</a></div>
+                                <div class="c-card__title"><a href="/../tank-arena.html">Tank Arena</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../tank/index.html" class="c-card__tag">Tank</a>
+                            <footer class="c-card__meta"><a href="/../tank/index.html" class="c-card__tag">Tank</a>
                             </footer>
                         </div>
                     </div>
@@ -569,9 +413,9 @@
                                 alt="Guerrillas io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../guerrillas-io.html">Guerrillas.io</a></div>
+                                <div class="c-card__title"><a href="/../guerrillas-io.html">Guerrillas.io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -585,10 +429,10 @@
                                 alt="Kick The Teddy Bear Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../kick-the-teddy-bear.html">Kick The Teddy
+                                <div class="c-card__title"><a href="/../kick-the-teddy-bear.html">Kick The Teddy
                                         Bear</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -601,9 +445,9 @@
                                 alt="CS Online Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../cs-online.html">CS Online</a></div>
+                                <div class="c-card__title"><a href="/../cs-online.html">CS Online</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -616,10 +460,10 @@
                                 alt="Big Game Hunting Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../big-game-hunting.html">Big Game Hunting</a>
+                                <div class="c-card__title"><a href="/../big-game-hunting.html">Big Game Hunting</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../sniper/index.html" class="c-card__tag">Sniper</a>
+                            <footer class="c-card__meta"><a href="/../sniper/index.html" class="c-card__tag">Sniper</a>
                             </footer>
                         </div>
                     </div>
@@ -632,10 +476,10 @@
                                 alt="Hero Dragon Power Unblocked Game"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../hero-dragon-power.html">Hero Dragon Power</a>
+                                <div class="c-card__title"><a href="/../hero-dragon-power.html">Hero Dragon Power</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../2d/index.html" class="c-card__tag">2D</a>
+                            <footer class="c-card__meta"><a href="/../2d/index.html" class="c-card__tag">2D</a>
                             </footer>
                         </div>
                     </div>
@@ -648,9 +492,9 @@
                                 alt="Urban Sniper Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../urban-sniper.html">Urban Sniper</a></div>
+                                <div class="c-card__title"><a href="/../urban-sniper.html">Urban Sniper</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../3d/index.html" class="c-card__tag">3D</a>
+                            <footer class="c-card__meta"><a href="/../3d/index.html" class="c-card__tag">3D</a>
                             </footer>
                         </div>
                     </div>
@@ -663,9 +507,9 @@
                                 alt="Puppet Killer Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../puppet-killer.html">Puppet Killer</a></div>
+                                <div class="c-card__title"><a href="/../puppet-killer.html">Puppet Killer</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../arcade/index.html" class="c-card__tag">Arcade</a>
+                            <footer class="c-card__meta"><a href="/../arcade/index.html" class="c-card__tag">Arcade</a>
                             </footer>
                         </div>
                     </div>
@@ -678,9 +522,9 @@
                                 alt="Gangsters Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../gangsters.html">Gangsters</a></div>
+                                <div class="c-card__title"><a href="/../gangsters.html">Gangsters</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../2-player/index.html" class="c-card__tag">2
+                            <footer class="c-card__meta"><a href="/../2-player/index.html" class="c-card__tag">2
                                     Player</a></footer>
                         </div>
                     </div>
@@ -693,10 +537,10 @@
                                 alt="Funny Shooter Bro Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../funny-shooter-bro.html">Funny Shooter Bro</a>
+                                <div class="c-card__title"><a href="/../funny-shooter-bro.html">Funny Shooter Bro</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -709,10 +553,10 @@
                                 alt="Blocky Combat Swat Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../blocky-combat-swat.html">Blocky Combat Swat</a>
+                                <div class="c-card__title"><a href="/../blocky-combat-swat.html">Blocky Combat Swat</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../fps/index.html" class="c-card__tag">FPS</a>
+                            <footer class="c-card__meta"><a href="/../fps/index.html" class="c-card__tag">FPS</a>
                             </footer>
                         </div>
                     </div>
@@ -725,9 +569,9 @@
                                 alt="Dragon World Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../dragon-world.html">Dragon World</a></div>
+                                <div class="c-card__title"><a href="/../dragon-world.html">Dragon World</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -740,9 +584,9 @@
                                 alt="Sniper Reloaded Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../sniper-reloaded.html">Sniper Reloaded</a></div>
+                                <div class="c-card__title"><a href="/../sniper-reloaded.html">Sniper Reloaded</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../sniper/index.html" class="c-card__tag">Sniper</a>
+                            <footer class="c-card__meta"><a href="/../sniper/index.html" class="c-card__tag">Sniper</a>
                             </footer>
                         </div>
                     </div>
@@ -755,10 +599,10 @@
                                 alt="Crazy Strike Force Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../crazy-strike-force.html">Crazy Strike Force</a>
+                                <div class="c-card__title"><a href="/../crazy-strike-force.html">Crazy Strike Force</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -771,9 +615,9 @@
                                 alt="Mob City Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../mob-city.html">Mob City</a></div>
+                                <div class="c-card__title"><a href="/../mob-city.html">Mob City</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -786,9 +630,9 @@
                                 alt="Kawaii Shooter Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../kawaii-shooter.html">Kawaii Shooter</a></div>
+                                <div class="c-card__title"><a href="/../kawaii-shooter.html">Kawaii Shooter</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -801,9 +645,9 @@
                                 alt="Electric Man 2 Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../electric-man-2.html">Electric Man 2</a></div>
+                                <div class="c-card__title"><a href="/../electric-man-2.html">Electric Man 2</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../stickman/index.html"
+                            <footer class="c-card__meta"><a href="/../stickman/index.html"
                                     class="c-card__tag">Stickman</a></footer>
                         </div>
                     </div>
@@ -816,10 +660,10 @@
                                 alt="Xtreme Paintball Wars Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../xtreme-paintball-wars.html">Xtreme Paintball
+                                <div class="c-card__title"><a href="/../xtreme-paintball-wars.html">Xtreme Paintball
                                         Wars</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../fps/index.html" class="c-card__tag">FPS</a>
+                            <footer class="c-card__meta"><a href="/../fps/index.html" class="c-card__tag">FPS</a>
                             </footer>
                         </div>
                     </div>
@@ -832,10 +676,10 @@
                                 alt="Pixel Battle Royale Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../pixel-battle-royale.html">Pixel Battle
+                                <div class="c-card__title"><a href="/../pixel-battle-royale.html">Pixel Battle
                                         Royale</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -848,10 +692,10 @@
                                 alt="Masked Forces Crazy Mode Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../masked-forces-crazy-mode.html">Masked Forces
+                                <div class="c-card__title"><a href="/../masked-forces-crazy-mode.html">Masked Forces
                                         Crazy Mode</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -864,10 +708,10 @@
                                 alt="Skibidi Toilet Shooting Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../skibidi-toilet-shooting.html">Skibidi Toilet
+                                <div class="c-card__title"><a href="/../skibidi-toilet-shooting.html">Skibidi Toilet
                                         Shooting</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -880,9 +724,9 @@
                                 alt="Toilets Attack Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../toilets-attack.html">Toilets Attack</a></div>
+                                <div class="c-card__title"><a href="/../toilets-attack.html">Toilets Attack</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -895,9 +739,9 @@
                                 alt="Cactus McCoy 1 Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../cactus-mccoy-1.html">Cactus McCoy 1</a></div>
+                                <div class="c-card__title"><a href="/../cactus-mccoy-1.html">Cactus McCoy 1</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../flash/index.html" class="c-card__tag">Flash</a>
+                            <footer class="c-card__meta"><a href="/../flash/index.html" class="c-card__tag">Flash</a>
                             </footer>
                         </div>
                     </div>
@@ -910,10 +754,10 @@
                                 alt="Unblocked Shooters"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../unblocked-shooters.html">Unblocked Shooters</a>
+                                <div class="c-card__title"><a href="/../unblocked-shooters.html">Unblocked Shooters</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -926,9 +770,9 @@
                                 alt="Sniper Strike Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../sniper-strike.html">Sniper Strike</a></div>
+                                <div class="c-card__title"><a href="/../sniper-strike.html">Sniper Strike</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../sniper/index.html" class="c-card__tag">Sniper</a>
+                            <footer class="c-card__meta"><a href="/../sniper/index.html" class="c-card__tag">Sniper</a>
                             </footer>
                         </div>
                     </div>
@@ -941,9 +785,9 @@
                                 alt="Crazy Shooters Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../crazy-shooters.html">Crazy Shooters</a></div>
+                                <div class="c-card__title"><a href="/../crazy-shooters.html">Crazy Shooters</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -956,9 +800,9 @@
                                 alt="Airplane Racer Unblocked Game"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../airplane-racer.html">Airplane Racer</a></div>
+                                <div class="c-card__title"><a href="/../airplane-racer.html">Airplane Racer</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../simulator/index.html"
+                            <footer class="c-card__meta"><a href="/../simulator/index.html"
                                     class="c-card__tag">Simulator</a></footer>
                         </div>
                     </div>
@@ -971,9 +815,9 @@
                                 alt="Granny Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../granny.html">Granny</a></div>
+                                <div class="c-card__title"><a href="/../granny.html">Granny</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -986,10 +830,10 @@
                                 alt="Stick Hero Mighty Tower Wars Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../stick-hero-mighty-tower-wars.html">Stick Hero
+                                <div class="c-card__title"><a href="/../stick-hero-mighty-tower-wars.html">Stick Hero
                                         Mighty Tower Wars</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../stickman/index.html"
+                            <footer class="c-card__meta"><a href="/../stickman/index.html"
                                     class="c-card__tag">Stickman</a></footer>
                         </div>
                     </div>
@@ -1002,9 +846,9 @@
                                 alt="Squad Shooter Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../squad-shooter.html">Squad Shooter</a></div>
+                                <div class="c-card__title"><a href="/../squad-shooter.html">Squad Shooter</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -1017,9 +861,9 @@
                                 alt="Mini Shooters Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../mini-shooters.html">Mini Shooters</a></div>
+                                <div class="c-card__title"><a href="/../mini-shooters.html">Mini Shooters</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1033,10 +877,10 @@
                         <div class="c-card__content">
                             <header>
                                 <div class="c-card__title"><a
-                                        href="./../realistic-zombie-survival-warfare.html">Realistic Zombie Survival
+                                        href="/../realistic-zombie-survival-warfare.html">Realistic Zombie Survival
                                         Warfare</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../zombie/index.html" class="c-card__tag">Zombie</a>
+                            <footer class="c-card__meta"><a href="/../zombie/index.html" class="c-card__tag">Zombie</a>
                             </footer>
                         </div>
                     </div>
@@ -1049,9 +893,9 @@
                                 alt="Cactus McCoy 2 Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../cactus-mccoy-2.html">Cactus McCoy 2</a></div>
+                                <div class="c-card__title"><a href="/../cactus-mccoy-2.html">Cactus McCoy 2</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../flash/index.html" class="c-card__tag">Flash</a>
+                            <footer class="c-card__meta"><a href="/../flash/index.html" class="c-card__tag">Flash</a>
                             </footer>
                         </div>
                     </div>
@@ -1064,9 +908,9 @@
                                 alt="Sniper Trigger Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../sniper-trigger.html">Sniper Trigger</a></div>
+                                <div class="c-card__title"><a href="/../sniper-trigger.html">Sniper Trigger</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../sniper/index.html" class="c-card__tag">Sniper</a>
+                            <footer class="c-card__meta"><a href="/../sniper/index.html" class="c-card__tag">Sniper</a>
                             </footer>
                         </div>
                     </div>
@@ -1079,9 +923,9 @@
                                 alt="Army Combat Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../army-combat.html">Army Combat</a></div>
+                                <div class="c-card__title"><a href="/../army-combat.html">Army Combat</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1094,10 +938,10 @@
                                 alt="Rainbow Survival Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../rainbow-survival.html">Rainbow Survival</a>
+                                <div class="c-card__title"><a href="/../rainbow-survival.html">Rainbow Survival</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../fps/index.html" class="c-card__tag">FPS</a>
+                            <footer class="c-card__meta"><a href="/../fps/index.html" class="c-card__tag">FPS</a>
                             </footer>
                         </div>
                     </div>
@@ -1110,10 +954,10 @@
                                 alt="Masked Shooters Assault Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../masked-shooters-assault.html">Masked Shooters
+                                <div class="c-card__title"><a href="/../masked-shooters-assault.html">Masked Shooters
                                         Assault</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1126,9 +970,9 @@
                                 alt="SpaceGuard.io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../spaceguard-io.html">SpaceGuard.io</a></div>
+                                <div class="c-card__title"><a href="/../spaceguard-io.html">SpaceGuard.io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../io-games/index.html" class="c-card__tag">io
+                            <footer class="c-card__meta"><a href="/../io-games/index.html" class="c-card__tag">io
                                     Games</a></footer>
                         </div>
                     </div>
@@ -1141,10 +985,10 @@
                                 alt="Tiny Crash Fighters Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../tiny-crash-fighters.html">Tiny Crash
+                                <div class="c-card__title"><a href="/../tiny-crash-fighters.html">Tiny Crash
                                         Fighters</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../puzzle/index.html" class="c-card__tag">Puzzle</a>
+                            <footer class="c-card__meta"><a href="/../puzzle/index.html" class="c-card__tag">Puzzle</a>
                             </footer>
                         </div>
                     </div>
@@ -1157,10 +1001,10 @@
                                 alt="Masked Forces Zombie Survival Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../masked-forces-zombie-survival.html">Masked
+                                <div class="c-card__title"><a href="/../masked-forces-zombie-survival.html">Masked
                                         Forces Zombie Survival</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1173,9 +1017,9 @@
                                 alt="Dragon City Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../dragon-city.html">Dragon City</a></div>
+                                <div class="c-card__title"><a href="/../dragon-city.html">Dragon City</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../3d/index.html" class="c-card__tag">3D</a>
+                            <footer class="c-card__meta"><a href="/../3d/index.html" class="c-card__tag">3D</a>
                             </footer>
                         </div>
                     </div>
@@ -1188,9 +1032,9 @@
                                 alt="ToonZ.io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../toonz-io.html">ToonZ.io</a></div>
+                                <div class="c-card__title"><a href="/../toonz-io.html">ToonZ.io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../io-games/index.html" class="c-card__tag">io
+                            <footer class="c-card__meta"><a href="/../io-games/index.html" class="c-card__tag">io
                                     Games</a></footer>
                         </div>
                     </div>
@@ -1203,9 +1047,9 @@
                                 alt="Shark IO Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../shark-io.html">Shark IO</a></div>
+                                <div class="c-card__title"><a href="/../shark-io.html">Shark IO</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../crazy/index.html" class="c-card__tag">Crazy</a>
+                            <footer class="c-card__meta"><a href="/../crazy/index.html" class="c-card__tag">Crazy</a>
                             </footer>
                         </div>
                     </div>
@@ -1218,9 +1062,9 @@
                                 alt="Skibidi Strike Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../skibidi-strike.html">Skibidi Strike</a></div>
+                                <div class="c-card__title"><a href="/../skibidi-strike.html">Skibidi Strike</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1233,9 +1077,9 @@
                                 alt="Bullet Master Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../bullet-master.html">Bullet Master</a></div>
+                                <div class="c-card__title"><a href="/../bullet-master.html">Bullet Master</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../gun/index.html" class="c-card__tag">Gun</a>
+                            <footer class="c-card__meta"><a href="/../gun/index.html" class="c-card__tag">Gun</a>
                             </footer>
                         </div>
                     </div>
@@ -1248,10 +1092,10 @@
                                 alt="Soul Essence Adventure Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../soul-essence-adventure.html">Soul Essence
+                                <div class="c-card__title"><a href="/../soul-essence-adventure.html">Soul Essence
                                         Adventure</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../2d/index.html" class="c-card__tag">2D</a>
+                            <footer class="c-card__meta"><a href="/../2d/index.html" class="c-card__tag">2D</a>
                             </footer>
                         </div>
                     </div>
@@ -1264,10 +1108,10 @@
                                 alt="Legendary Sniper Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../legendary-sniper.html">Legendary Sniper</a>
+                                <div class="c-card__title"><a href="/../legendary-sniper.html">Legendary Sniper</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../sniper/index.html" class="c-card__tag">Sniper</a>
+                            <footer class="c-card__meta"><a href="/../sniper/index.html" class="c-card__tag">Sniper</a>
                             </footer>
                         </div>
                     </div>
@@ -1280,10 +1124,10 @@
                                 alt="Horse Riding Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../horse-riding-simulator.html">Horse Riding
+                                <div class="c-card__title"><a href="/../horse-riding-simulator.html">Horse Riding
                                         Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../3d/index.html" class="c-card__tag">3D</a>
+                            <footer class="c-card__meta"><a href="/../3d/index.html" class="c-card__tag">3D</a>
                             </footer>
                         </div>
                     </div>
@@ -1296,10 +1140,10 @@
                                 alt="Wasteland Shooters Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../wasteland-shooters.html">Wasteland Shooters</a>
+                                <div class="c-card__title"><a href="/../wasteland-shooters.html">Wasteland Shooters</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1312,10 +1156,10 @@
                                 alt="Fort Shooter Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../fort-shooter-simulator.html">Fort Shooter
+                                <div class="c-card__title"><a href="/../fort-shooter-simulator.html">Fort Shooter
                                         Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../3d/index.html" class="c-card__tag">3D</a>
+                            <footer class="c-card__meta"><a href="/../3d/index.html" class="c-card__tag">3D</a>
                             </footer>
                         </div>
                     </div>
@@ -1328,10 +1172,10 @@
                                 alt="Tank War Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../tank-war-simulator.html">Tank War Simulator</a>
+                                <div class="c-card__title"><a href="/../tank-war-simulator.html">Tank War Simulator</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../3d/index.html" class="c-card__tag">3D</a>
+                            <footer class="c-card__meta"><a href="/../3d/index.html" class="c-card__tag">3D</a>
                             </footer>
                         </div>
                     </div>
@@ -1344,9 +1188,9 @@
                                 alt="Masked Forces Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../masked-forces.html">Masked Forces</a></div>
+                                <div class="c-card__title"><a href="/../masked-forces.html">Masked Forces</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../3d/index.html" class="c-card__tag">3D</a>
+                            <footer class="c-card__meta"><a href="/../3d/index.html" class="c-card__tag">3D</a>
                             </footer>
                         </div>
                     </div>
@@ -1359,10 +1203,10 @@
                                 alt="Darkness Survivors Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../darkness-survivors.html">Darkness Survivors</a>
+                                <div class="c-card__title"><a href="/../darkness-survivors.html">Darkness Survivors</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -1375,10 +1219,10 @@
                                 alt="Dragon Simulator Multiplayer Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../dragon-simulator-multiplayer.html">Dragon
+                                <div class="c-card__title"><a href="/../dragon-simulator-multiplayer.html">Dragon
                                         Simulator Multiplayer</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -1391,10 +1235,10 @@
                                 alt="Backrooms Shooter Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../backrooms-shooter.html">Backrooms Shooter</a>
+                                <div class="c-card__title"><a href="/../backrooms-shooter.html">Backrooms Shooter</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1408,10 +1252,10 @@
                                 alt="War Of Tanks Paper Note Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../war-of-tanks-paper-note.html">War Of Tanks
+                                <div class="c-card__title"><a href="/../war-of-tanks-paper-note.html">War Of Tanks
                                         Paper Note</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../tank/index.html" class="c-card__tag">Tank</a>
+                            <footer class="c-card__meta"><a href="/../tank/index.html" class="c-card__tag">Tank</a>
                             </footer>
                         </div>
                     </div>
@@ -1424,10 +1268,10 @@
                                 alt="CobraZ.io Classic Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../cobraz-io-classic.html">CobraZ.io Classic</a>
+                                <div class="c-card__title"><a href="/../cobraz-io-classic.html">CobraZ.io Classic</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../io-games/index.html" class="c-card__tag">io
+                            <footer class="c-card__meta"><a href="/../io-games/index.html" class="c-card__tag">io
                                     Games</a></footer>
                         </div>
                     </div>
@@ -1440,9 +1284,9 @@
                                 alt="Mech Shooter Unblocked Online Game"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../mech-shooter.html">Mech Shooter</a></div>
+                                <div class="c-card__title"><a href="/../mech-shooter.html">Mech Shooter</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1455,9 +1299,9 @@
                                 alt="War Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../war-simulator.html">War Simulator</a></div>
+                                <div class="c-card__title"><a href="/../war-simulator.html">War Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -1470,10 +1314,10 @@
                                 alt="Batlle Royale Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../battle-royale-simulator.html">Battle Royale
+                                <div class="c-card__title"><a href="/../battle-royale-simulator.html">Battle Royale
                                         Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1486,10 +1330,10 @@
                                 alt="Tank Driver Simulator Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../tank-driver-simulator.html">Tank Driver
+                                <div class="c-card__title"><a href="/../tank-driver-simulator.html">Tank Driver
                                         Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../driving/index.html"
+                            <footer class="c-card__meta"><a href="/../driving/index.html"
                                     class="c-card__tag">Driving</a></footer>
                         </div>
                     </div>
@@ -1502,9 +1346,9 @@
                                 alt="FPS Simulator Unblocked Game"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../fps-simulator.html">FPS Simulator</a></div>
+                                <div class="c-card__title"><a href="/../fps-simulator.html">FPS Simulator</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../fps/index.html" class="c-card__tag">FPS</a>
+                            <footer class="c-card__meta"><a href="/../fps/index.html" class="c-card__tag">FPS</a>
                             </footer>
                         </div>
                     </div>
@@ -1517,10 +1361,10 @@
                                 alt="Biozombie of Evil Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../biozombie-of-evil.html">Biozombie of Evil</a>
+                                <div class="c-card__title"><a href="/../biozombie-of-evil.html">Biozombie of Evil</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1533,10 +1377,10 @@
                                 alt="Zombie Apocalypse Shooter Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../zombie-apocalypse-shooter.html">Zombie
+                                <div class="c-card__title"><a href="/../zombie-apocalypse-shooter.html">Zombie
                                         Apocalypse Shooter</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../fps/index.html" class="c-card__tag">FPS</a>
+                            <footer class="c-card__meta"><a href="/../fps/index.html" class="c-card__tag">FPS</a>
                             </footer>
                         </div>
                     </div>
@@ -1549,10 +1393,10 @@
                                 alt="Heavy Combat Zombies Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../heavy-combat-zombies.html">Heavy Combat
+                                <div class="c-card__title"><a href="/../heavy-combat-zombies.html">Heavy Combat
                                         Zombies</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1565,9 +1409,9 @@
                                 alt="War Of Ships io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../war-of-ships-io.html">War Of Ships io</a></div>
+                                <div class="c-card__title"><a href="/../war-of-ships-io.html">War Of Ships io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../io-games/index.html" class="c-card__tag">io
+                            <footer class="c-card__meta"><a href="/../io-games/index.html" class="c-card__tag">io
                                     Games</a></footer>
                         </div>
                     </div>
@@ -1581,10 +1425,10 @@
                                 alt="Pixel Battle Royale Multiplayer Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../pixel-battle-royale-multiplayer.html">Pixel
+                                <div class="c-card__title"><a href="/../pixel-battle-royale-multiplayer.html">Pixel
                                         Battle Royale Multiplayer</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1597,9 +1441,9 @@
                                 alt="Doom 2D Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../doom-2d.html">Doom 2D</a></div>
+                                <div class="c-card__title"><a href="/../doom-2d.html">Doom 2D</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -1612,10 +1456,10 @@
                                 alt="Mr Jack vs Zombies Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../mr-jack-vs-zombies.html">Mr Jack vs Zombies</a>
+                                <div class="c-card__title"><a href="/../mr-jack-vs-zombies.html">Mr Jack vs Zombies</a>
                                 </div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../action/index.html" class="c-card__tag">Action</a>
+                            <footer class="c-card__meta"><a href="/../action/index.html" class="c-card__tag">Action</a>
                             </footer>
                         </div>
                     </div>
@@ -1628,9 +1472,9 @@
                                 alt="Toon Shooters Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../toon-shooters.html">Toon Shooters</a></div>
+                                <div class="c-card__title"><a href="/../toon-shooters.html">Toon Shooters</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1643,9 +1487,9 @@
                                 alt="Masked io Unblocked"></figure>
                         <div class="c-card__content">
                             <header>
-                                <div class="c-card__title"><a href="./../masked-io.html">Masked io</a></div>
+                                <div class="c-card__title"><a href="/../masked-io.html">Masked io</a></div>
                             </header>
-                            <footer class="c-card__meta"><a href="./../shooting/index.html"
+                            <footer class="c-card__meta"><a href="/../shooting/index.html"
                                     class="c-card__tag">Shooting</a></footer>
                         </div>
                     </div>
@@ -1653,109 +1497,109 @@
             </div>
         </div>
         <nav class="pagination"><span class="pagination-first pagination-inactive">&#8249; Previous</span>
-            <div><a href="#" class="pagination-active">1 </a><a href="./../action/page/2/index.html">2</a></div><a
-                href="./../action/page/2/index.html" class="pagination__next">Next &#8250;</a>
+            <div><a href="#" class="pagination-active">1 </a><a href="/../action/page/2/index.html">2</a></div><a
+                href="/../action/page/2/index.html" class="pagination__next">Next &#8250;</a>
         </nav><button class="view-more">View more</button>
-        <nav class="filter tag_list"><a href="./../index.html" class="filter__item">All<img
+        <nav class="filter tag_list"><a href="/../index.html" class="filter__item">All<img
                     src="./../assets/img/games.jpg" alt="All Unblocked Games" loading="lazy"></a><a
-                href="./../2-player/index.html" class="filter__item">2 Player<img
-                    src="./../media/tags/16/2-player-2.jpg" alt="2 Player Games Unblocked" loading="lazy"></a>
-            <a href="./../2d/index.html" class="filter__item">2D<img src="./../media/tags/21/2d-2.jpg"
-                    alt="2D Games Unblocked" loading="lazy"></a><a href="./../3d/index.html" class="filter__item">3D<img
+                href="/../2-player/index.html" class="filter__item">2 Player<img src="./../media/tags/16/2-player-2.jpg"
+                    alt="2 Player Games Unblocked" loading="lazy"></a>
+            <a href="/../2d/index.html" class="filter__item">2D<img src="./../media/tags/21/2d-2.jpg"
+                    alt="2D Games Unblocked" loading="lazy"></a><a href="/../3d/index.html" class="filter__item">3D<img
                     src="./../media/tags/20/3d-2.jpg" alt="3D Games Unblocked" loading="lazy"></a><a
-                href="./../action/index.html" class="filter__item is-active">Action<img
+                href="/../action/index.html" class="filter__item is-active">Action<img
                     src="./../media/tags/1/action-2.jpg" alt="Action Games Unblocked" loading="lazy"></a><a
-                href="./../adventure/index.html" class="filter__item">Adventure<img
+                href="/../adventure/index.html" class="filter__item">Adventure<img
                     src="./../media/tags/6/adventure-2.jpg" alt="Adventure Games Unblocked" loading="lazy"></a>
-            <a href="./../airplane/index.html" class="filter__item">Airplane<img
+            <a href="/../airplane/index.html" class="filter__item">Airplane<img
                     src="./../media/tags/35/airplane-games.jpg" alt="Airplane Games Unblocked" loading="lazy"></a><a
-                href="./../arcade/index.html" class="filter__item">Arcade<img src="./../media/tags/7/arcade-2.jpg"
+                href="/../arcade/index.html" class="filter__item">Arcade<img src="./../media/tags/7/arcade-2.jpg"
                     alt="Arcade Games Unblocked" loading="lazy"></a>
-            <a href="./../army/index.html" class="filter__item">Army<img src="./../media/tags/42/army-games.jpg"
-                    alt="Army Games Unblocked" loading="lazy"></a><a href="./../basketball/index.html"
+            <a href="/../army/index.html" class="filter__item">Army<img src="./../media/tags/42/army-games.jpg"
+                    alt="Army Games Unblocked" loading="lazy"></a><a href="/../basketball/index.html"
                 class="filter__item">Basketball<img src="./../media/tags/47/basketball-games.jpg"
                     alt="Basketball Games Unblocked" loading="lazy"></a>
-            <a href="./../battle-royale/index.html" class="filter__item">Battle Royale<img
+            <a href="/../battle-royale/index.html" class="filter__item">Battle Royale<img
                     src="./../media/tags/36/battle-royale-tag.jpg" alt="Battle Royale Games Unblocked"
-                    loading="lazy"></a><a href="./../bike/index.html" class="filter__item">Bike<img
+                    loading="lazy"></a><a href="/../bike/index.html" class="filter__item">Bike<img
                     src="./../media/tags/32/bike-games-tag.jpg" alt="Bike Games Unblocked" loading="lazy"></a>
-            <a href="./../car/index.html" class="filter__item">Car<img src="./../media/tags/11/car-2.jpg"
-                    alt="Car Games Unblocked" loading="lazy"></a><a href="./../clicker/index.html"
+            <a href="/../car/index.html" class="filter__item">Car<img src="./../media/tags/11/car-2.jpg"
+                    alt="Car Games Unblocked" loading="lazy"></a><a href="/../clicker/index.html"
                 class="filter__item">Clicker<img src="./../media/tags/51/clicker-games-128.jpg"
                     alt="Clicker Games Unblocked" loading="lazy"></a>
-            <a href="./../crazy/index.html" class="filter__item">Crazy<img src="./../media/tags/15/crazy-2.jpg"
-                    alt="Crazy Games Unblocked" loading="lazy"></a><a href="./../dragon/index.html"
+            <a href="/../crazy/index.html" class="filter__item">Crazy<img src="./../media/tags/15/crazy-2.jpg"
+                    alt="Crazy Games Unblocked" loading="lazy"></a><a href="/../dragon/index.html"
                 class="filter__item">Dragon<img src="./../media/tags/34/dragon-games-tag.jpg"
                     alt="Dragon Games Unblocked" loading="lazy"></a>
-            <a href="./../drift/index.html" class="filter__item">Drift<img src="./../media/tags/14/drift-2.jpg"
-                    alt="Drift Games Unblocked" loading="lazy"></a><a href="./../driving/index.html"
+            <a href="/../drift/index.html" class="filter__item">Drift<img src="./../media/tags/14/drift-2.jpg"
+                    alt="Drift Games Unblocked" loading="lazy"></a><a href="/../driving/index.html"
                 class="filter__item">Driving<img src="./../media/tags/2/driving-2.jpg" alt="Driving Games Unblocked"
                     loading="lazy"></a>
-            <a href="./../escape/index.html" class="filter__item">Escape<img src="./../media/tags/46/escape-games.jpg"
-                    alt="Escape Games Unblocked" loading="lazy"></a><a href="./../flash/index.html"
+            <a href="/../escape/index.html" class="filter__item">Escape<img src="./../media/tags/46/escape-games.jpg"
+                    alt="Escape Games Unblocked" loading="lazy"></a><a href="/../flash/index.html"
                 class="filter__item">Flash<img src="./../media/tags/57/Flash-Games-Unblocked.jpg"
                     alt="Flash Games Unblocked" loading="lazy"></a>
-            <a href="./../fps/index.html" class="filter__item">FPS<img src="./../media/tags/31/fps-games-128.jpg"
-                    alt="FPS Games Unblocked" loading="lazy"></a><a href="./../girl/index.html"
+            <a href="/../fps/index.html" class="filter__item">FPS<img src="./../media/tags/31/fps-games-128.jpg"
+                    alt="FPS Games Unblocked" loading="lazy"></a><a href="/../girl/index.html"
                 class="filter__item">Girl<img src="./../media/tags/45/girl-games.jpg" alt="Girl Games Unblocked"
                     loading="lazy"></a>
-            <a href="./../gun/index.html" class="filter__item">Gun<img src="./../media/tags/48/gun-games.jpg"
-                    alt="Gun Games Unblocked" loading="lazy"></a><a href="./../html5/index.html"
+            <a href="/../gun/index.html" class="filter__item">Gun<img src="./../media/tags/48/gun-games.jpg"
+                    alt="Gun Games Unblocked" loading="lazy"></a><a href="/../html5/index.html"
                 class="filter__item">HTML5<img src="./../media/tags/54/HTML5-Games.-Unblocked.jpg"
                     alt="HTML5 Games Unblocked" loading="lazy"></a>
-            <a href="./../idle/index.html" class="filter__item">Idle<img
+            <a href="/../idle/index.html" class="filter__item">Idle<img
                     src="./../media/tags/50/idle-games-unblocked.jpg" alt="Idle Games Unblocked" loading="lazy"></a><a
-                href="./../io-games/index.html" class="filter__item">io Games<img src="./../media/tags/5/iogames-2.jpg"
+                href="/../io-games/index.html" class="filter__item">io Games<img src="./../media/tags/5/iogames-2.jpg"
                     alt="io Games Games Unblocked" loading="lazy"></a>
-            <a href="./../kids/index.html" class="filter__item">Kids<img src="./../media/tags/12/kids.jpg"
-                    alt="Kids Games Unblocked" loading="lazy"></a><a href="./../minecraft/index.html"
+            <a href="/../kids/index.html" class="filter__item">Kids<img src="./../media/tags/12/kids.jpg"
+                    alt="Kids Games Unblocked" loading="lazy"></a><a href="/../minecraft/index.html"
                 class="filter__item">Minecraft<img src="./../media/tags/25/minecraft-2.jpg"
                     alt="Minecraft Games Unblocked" loading="lazy"></a>
-            <a href="./../mini/index.html" class="filter__item">Mini<img src="./../media/tags/53/mini-games-128.jpg"
-                    alt="Mini Games Unblocked" loading="lazy"></a><a href="./../mobile/index.html"
+            <a href="/../mini/index.html" class="filter__item">Mini<img src="./../media/tags/53/mini-games-128.jpg"
+                    alt="Mini Games Unblocked" loading="lazy"></a><a href="/../mobile/index.html"
                 class="filter__item">Mobile<img src="./../media/tags/23/mobile-2.jpg" alt="Mobile Games Unblocked"
                     loading="lazy"></a>
-            <a href="./../multiplayer/index.html" class="filter__item">Multiplayer<img
+            <a href="/../multiplayer/index.html" class="filter__item">Multiplayer<img
                     src="./../media/tags/3/multiplayer-2.jpg" alt="Multiplayer Games Unblocked" loading="lazy"></a><a
-                href="./../parking/index.html" class="filter__item">Parking<img
+                href="/../parking/index.html" class="filter__item">Parking<img
                     src="./../media/tags/33/parking-games-tag.jpg" alt="Parking Games Unblocked" loading="lazy"></a>
-            <a href="./../pixel/index.html" class="filter__item">Pixel<img src="./../media/tags/18/pixel-2.jpg"
-                    alt="Pixel Games Unblocked" loading="lazy"></a><a href="./../premium/index.html"
+            <a href="/../pixel/index.html" class="filter__item">Pixel<img src="./../media/tags/18/pixel-2.jpg"
+                    alt="Pixel Games Unblocked" loading="lazy"></a><a href="/../premium/index.html"
                 class="filter__item">Premium<img src="./../media/tags/40/premium-games.jpg"
                     alt="Premium Games Unblocked" loading="lazy"></a>
-            <a href="./../puzzle/index.html" class="filter__item">Puzzle<img src="./../media/tags/24/puzzle-2.jpg"
-                    alt="Puzzle Games Unblocked" loading="lazy"></a><a href="./../racing/index.html"
+            <a href="/../puzzle/index.html" class="filter__item">Puzzle<img src="./../media/tags/24/puzzle-2.jpg"
+                    alt="Puzzle Games Unblocked" loading="lazy"></a><a href="/../racing/index.html"
                 class="filter__item">Racing<img src="./../media/tags/13/racing-2.jpg" alt="Racing Games Unblocked"
                     loading="lazy"></a>
-            <a href="./../rally/index.html" class="filter__item">Rally<img
+            <a href="/../rally/index.html" class="filter__item">Rally<img
                     src="./../media/tags/56/Rally-Games-Unblocked.jpg" alt="Rally Games Unblocked" loading="lazy"></a><a
-                href="./../scary/index.html" class="filter__item">Scary<img src="./../media/tags/37/scary-games.jpg"
+                href="/../scary/index.html" class="filter__item">Scary<img src="./../media/tags/37/scary-games.jpg"
                     alt="Scary Games Unblocked" loading="lazy"></a>
-            <a href="./../shooting/index.html" class="filter__item">Shooting<img src="./../media/tags/4/shooting-2.jpg"
-                    alt="Shooting Games Unblocked" loading="lazy"></a><a href="./../simulator/index.html"
+            <a href="/../shooting/index.html" class="filter__item">Shooting<img src="./../media/tags/4/shooting-2.jpg"
+                    alt="Shooting Games Unblocked" loading="lazy"></a><a href="/../simulator/index.html"
                 class="filter__item">Simulator<img src="./../media/tags/19/simulator-2.jpg"
                     alt="Simulator Games Unblocked" loading="lazy"></a>
-            <a href="./../skill/index.html" class="filter__item">Skill<img
+            <a href="/../skill/index.html" class="filter__item">Skill<img
                     src="./../media/tags/55/Skill-Games-Unblocked.jpg" alt="Skill Games Unblocked" loading="lazy"></a><a
-                href="./../snake/index.html" class="filter__item">Snake<img src="./../media/tags/49/snake-games.jpg"
+                href="/../snake/index.html" class="filter__item">Snake<img src="./../media/tags/49/snake-games.jpg"
                     alt="Snake Games Unblocked" loading="lazy"></a>
-            <a href="./../sniper/index.html" class="filter__item">Sniper<img src="./../media/tags/17/sniper-2.jpg"
-                    alt="Sniper Games Unblocked" loading="lazy"></a><a href="./../sports/index.html"
+            <a href="/../sniper/index.html" class="filter__item">Sniper<img src="./../media/tags/17/sniper-2.jpg"
+                    alt="Sniper Games Unblocked" loading="lazy"></a><a href="/../sports/index.html"
                 class="filter__item">Sports<img src="./../media/tags/38/sports-games.jpg" alt="Sports Games Unblocked"
                     loading="lazy"></a>
-            <a href="./../stickman/index.html" class="filter__item">Stickman<img
+            <a href="/../stickman/index.html" class="filter__item">Stickman<img
                     src="./../media/tags/52/stickman-sm-128.jpg" alt="Stickman Games Unblocked" loading="lazy"></a><a
-                href="./../strategy/index.html" class="filter__item">Strategy<img
-                    src="./../media/tags/22/strategy-2.jpg" alt="Strategy Games Unblocked" loading="lazy"></a>
-            <a href="./../tank/index.html" class="filter__item">Tank<img src="./../media/tags/39/tank-games.jpg"
-                    alt="Tank Games Unblocked" loading="lazy"></a><a href="./../truck/index.html"
+                href="/../strategy/index.html" class="filter__item">Strategy<img src="./../media/tags/22/strategy-2.jpg"
+                    alt="Strategy Games Unblocked" loading="lazy"></a>
+            <a href="/../tank/index.html" class="filter__item">Tank<img src="./../media/tags/39/tank-games.jpg"
+                    alt="Tank Games Unblocked" loading="lazy"></a><a href="/../truck/index.html"
                 class="filter__item">Truck<img src="./../media/tags/43/truck-games.jpg" alt="Truck Games Unblocked"
                     loading="lazy"></a>
-            <a href="./../unblocked/index.html" class="filter__item">Unblocked<img
+            <a href="/../unblocked/index.html" class="filter__item">Unblocked<img
                     src="./../media/tags/9/unblock-128.webp" alt="Unblocked Games Unblocked" loading="lazy"></a><a
-                href="./../unity/index.html" class="filter__item">Unity<img src="./../media/tags/44/unity-games.jpg"
+                href="/../unity/index.html" class="filter__item">Unity<img src="./../media/tags/44/unity-games.jpg"
                     alt="Unity Games Unblocked" loading="lazy"></a>
-            <a href="./../zombie/index.html" class="filter__item">Zombie<img src="./../media/tags/41/zombie-games.jpg"
+            <a href="/../zombie/index.html" class="filter__item">Zombie<img src="./../media/tags/41/zombie-games.jpg"
                     alt="Zombie Games Unblocked" loading="lazy"></a>
         </nav>
         <div class="wrapper">
@@ -1885,26 +1729,26 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
-            <div class="footer__top"><a class="logo footer__logo" href="./../index.html"
+            <div class="footer__top"><a class="logo footer__logo" href="/../index.html"
                     style="color:rgb(62, 62, 190);">Solar Smash Online</a>
                 <div class="footer__nav-3">
                     <h3 class="h6">Menu</h3>
                     <ul class="footer__nav">
-                        <li><a href="./../index.html" target="_self">Home</a></li>
-                        <li><a href="./../new-games.html" target="_self">New</a></li>
-                        <li class="active"><a href="./../action/index.html" target="_self">Action</a></li>
-                        <li><a href="./../car/index.html" target="_self">Car</a></li>
-                        <li><a href="./../driving/index.html" target="_self">Driving</a></li>
-                        <li><a href="./../multiplayer/index.html" target="_self">Multiplayer</a></li>
-                        <li><a href="./../shooting/index.html" target="_self">Shooting</a></li>
-                        <li><a href="./../io-games/index.html" target="_self">.io Games</a></li>
-                        <li><a href="./../privacy-policy.html" target="_self">Privacy Policy</a></li>
-                        <li><a href="./../chat.html" target="_self">Chat</a></li>
-                        <li><a href="./../about.html" target="_self">About</a></li>
-                        <li><a href="./../game-developers.html" target="_self">Game Developers</a></li>
+                        <li><a href="/../index.html" target="_self">Home</a></li>
+                        <li><a href="/../new-games.html" target="_self">New</a></li>
+                        <li class="active"><a href="/../action/index.html" target="_self">Action</a></li>
+                        <li><a href="/../car/index.html" target="_self">Car</a></li>
+                        <li><a href="/../driving/index.html" target="_self">Driving</a></li>
+                        <li><a href="/../multiplayer/index.html" target="_self">Multiplayer</a></li>
+                        <li><a href="/../shooting/index.html" target="_self">Shooting</a></li>
+                        <li><a href="/../io-games/index.html" target="_self">.io Games</a></li>
+                        <li><a href="/../privacy-policy.html" target="_self">Privacy Policy</a></li>
+                        <li><a href="/../chat.html" target="_self">Chat</a></li>
+                        <li><a href="/../about.html" target="_self">About</a></li>
+                        <li><a href="/../game-developers.html" target="_self">Game Developers</a></li>
                         <li><a href="https://github.com/freezenova/freezenova.github.io" target="_self">Self-hosting</a>
                         </li>
-                        <li><a href="./../contact.html" target="_self">Contact</a></li>
+                        <li><a href="/../contact.html" target="_self">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -1921,7 +1765,7 @@
             </div>
         </div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top"
             title="Back to top"><svg>
-                <use xlink:href="./../assets/svg/svg-map.svg#toparrow" />
+                <use xlink:href="/../assets/svg/svg-map.svg#toparrow" />
             </svg></button>
     </footer>
     <script defer="defer" src="./../assets/js/infinite-scroll.pkgd.min.js?v=014df05a95a4e2d99b39516b72cfea1f"></script>
