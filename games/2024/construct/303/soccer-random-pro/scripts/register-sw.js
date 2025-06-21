@@ -3,7 +3,7 @@
         if (!navigator.serviceWorker) return;
         try {
             const reg = await navigator.serviceWorker.register("sw.js", {
-                scope: "./"
+                scope: "/"
             });
             console.info("Registered service worker on " + reg.scope)
         } catch (err) {

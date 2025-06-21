@@ -137,10 +137,10 @@ async function UpdateCheck(e) {
             i = await caches.has(r);
         if (i) {
             const c = await IsUpdatePending();
-            void(c ? (console.log(CONSOLE_PREFIX + "Update pending"), Broadcast("update-pending")) : (console.log(CONSOLE_PREFIX + "Up to date"), Broadcast("up-to-date")))
+            void (c ? (console.log(CONSOLE_PREFIX + "Update pending"), Broadcast("update-pending")) : (console.log(CONSOLE_PREFIX + "Up to date"), Broadcast("up-to-date")))
         } else {
             const l = await GetMainPageUrl(),
-                d = (s.unshift("./"), l && -1 === s.indexOf(l) && s.unshift(l), console.log(CONSOLE_PREFIX + "Caching " + s.length + " files for offline use"), e ? Broadcast("downloading") : BroadcastDownloadingUpdate(o), n && await WriteLazyLoadListToStorage(n), await CreateCacheFromFileList(r, s, !e), await IsUpdatePending());
+                d = (s.unshift("/"), l && -1 === s.indexOf(l) && s.unshift(l), console.log(CONSOLE_PREFIX + "Caching " + s.length + " files for offline use"), e ? Broadcast("downloading") : BroadcastDownloadingUpdate(o), n && await WriteLazyLoadListToStorage(n), await CreateCacheFromFileList(r, s, !e), await IsUpdatePending());
             d ? (console.log(CONSOLE_PREFIX + "All resources saved, update ready"), BroadcastUpdateReady(o)) : (console.log(CONSOLE_PREFIX + "All resources saved, offline support ready"), Broadcast("offline-ready"))
         }
     } catch (e) {

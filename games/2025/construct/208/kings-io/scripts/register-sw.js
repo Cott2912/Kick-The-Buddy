@@ -1,8 +1,8 @@
 "use strict";
-window.C3_RegisterSW = async function() {
+window.C3_RegisterSW = async function () {
     if (navigator.serviceWorker) try {
         const e = await navigator.serviceWorker.register("sw.js", {
-            scope: "./"
+            scope: "/"
         });
         console.info("Registered service worker on " + e.scope)
     } catch (e) {

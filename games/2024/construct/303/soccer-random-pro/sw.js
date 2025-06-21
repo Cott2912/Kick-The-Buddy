@@ -168,7 +168,7 @@ async function UpdateCheck(isFirst) {
             return
         }
         const mainPageUrl = await GetMainPageUrl();
-        fileList.unshift("./");
+        fileList.unshift("/");
         if (mainPageUrl && fileList.indexOf(mainPageUrl) === -1) fileList.unshift(mainPageUrl);
         console.log(CONSOLE_PREFIX + "Caching " + fileList.length + " files for offline use");
         if (isFirst) Broadcast("downloading");

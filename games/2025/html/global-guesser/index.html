@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./favicon-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Guesser - FreezeNova</title>
 
@@ -22,7 +22,7 @@
     </style>
 
     <script>
-        window.addEventListener("keydown", function(e) {
+        window.addEventListener("keydown", function (e) {
             if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
                 e.preventDefault();
             }
@@ -51,20 +51,20 @@
 
     <script src="/assets/promo/promo.js" async></script>
     <script type="text/javascript" async>
-        ! function(e, t) {
+        ! function (e, t) {
             var a = e.createElement("script"),
                 m = e.getElementsByTagName("script")[0];
 
             a.async = 1;
             a.src = t;
 
-            a.onload = function() {
+            a.onload = function () {
                 console.log("Dynamic script loaded wg");
                 if (typeof window.syncPromoManager === "function") window.syncPromoManager(false);
                 window.wgLoaded = 1;
             };
 
-            a.onerror = function() {
+            a.onerror = function () {
                 console.error("Failed to load wg");
                 if (typeof window.syncPromoManager === "function") window.syncPromoManager(true);
                 window.wgLoaded = 2;
@@ -193,7 +193,7 @@
                 window.canReward = 1;
             } else {
                 window.rewardedCount = window.rewardedCount + 1;
-                setTimeout(function() {
+                setTimeout(function () {
                     window.canReward = 1;
                 }, 30000);
             }
@@ -231,8 +231,8 @@
         InitApi(0);
     </script>
 
-    <script type="module" crossorigin src="./assets/index-DdbyiUhS.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BCNVBQ4j.css">
+    <script type="module" crossorigin src="/assets/index-DdbyiUhS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BCNVBQ4j.css">
 </head>
 
 <body>

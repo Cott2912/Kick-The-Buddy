@@ -134,10 +134,10 @@ async function UpdateCheck(e) {
             s = a.lazyLoad,
             r = GetCacheVersionName(n);
         if (await caches.has(r)) {
-            return void(await IsUpdatePending() ? (console.log("[SW] Update pending"), Broadcast("update-pending")) : (console.log("[SW] Up to date"), Broadcast("up-to-date")))
+            return void (await IsUpdatePending() ? (console.log("[SW] Update pending"), Broadcast("update-pending")) : (console.log("[SW] Up to date"), Broadcast("up-to-date")))
         }
         const i = await GetMainPageUrl();
-        o.unshift("./"), i && -1 === o.indexOf(i) && o.unshift(i), console.log("[SW] Caching " + o.length + " files for offline use"), e ? Broadcast("downloading") : BroadcastDownloadingUpdate(n), s && await WriteLazyLoadListToStorage(s), await CreateCacheFromFileList(r, o, !e);
+        o.unshift("/"), i && -1 === o.indexOf(i) && o.unshift(i), console.log("[SW] Caching " + o.length + " files for offline use"), e ? Broadcast("downloading") : BroadcastDownloadingUpdate(n), s && await WriteLazyLoadListToStorage(s), await CreateCacheFromFileList(r, o, !e);
         await IsUpdatePending() ? (console.log("[SW] All resources saved, update ready"), BroadcastUpdateReady(n)) : (console.log("[SW] All resources saved, offline support ready"), Broadcast("offline-ready"))
     } catch (e) {
         console.warn("[SW] Update check failed: ", e)

@@ -226,7 +226,7 @@ async function UpdateCheck(isFirst) {
 
         // Prepend the main page URL to the file list if we found one and it is not already in the list.
         // Also make sure we request the base / which should serve the main page.
-        fileList.unshift("./");
+        fileList.unshift("/");
 
         if (mainPageUrl && fileList.indexOf(mainPageUrl) === -1)
             fileList.unshift(mainPageUrl);
@@ -267,7 +267,7 @@ self.addEventListener("install", event => {
     // retry on the next navigate.
     event.waitUntil(
         UpdateCheck(true) // first update
-        .catch(() => null)
+            .catch(() => null)
     );
 });
 
@@ -292,7 +292,7 @@ async function GetCacheNameToUse(availableCacheNames, doUpdateCheck) {
 
     await Promise.all(
         availableCacheNames.slice(0, -1)
-        .map(c => caches.delete(c))
+            .map(c => caches.delete(c))
     );
 
     return latestCacheName;
@@ -352,7 +352,7 @@ self.addEventListener("fetch", event => {
         // allow the main request to complete, then check for updates
         event.waitUntil(
             responsePromise
-            .then(() => UpdateCheck(false)) // not first check
+                .then(() => UpdateCheck(false)) // not first check
         );
     }
 

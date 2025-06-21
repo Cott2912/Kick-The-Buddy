@@ -77,7 +77,7 @@ body {
 }
 
 .message1 {
-    background-image: url("./assets/startscene.png");
+    background-image: url("/assets/startscene.png");
     background-size: cover;
     border-radius: 8px;
     height: 300px;
@@ -175,12 +175,14 @@ canvas {
         opacity: 0;
         /* Start fully transparent */
     }
+
     50% {
         transform: scale(1.2);
         /* Grow slightly larger */
         opacity: 1;
         /* Make the text visible */
     }
+
     100% {
         transform: scale(1);
         /* End with the original scale */
