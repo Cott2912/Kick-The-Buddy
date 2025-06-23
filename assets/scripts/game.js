@@ -57,11 +57,11 @@ if (canRedir && result.inIframe && !result.sameDomain) {
 
     if (rootDomain1 === "googleapis.com" && window.self !== window.parent) {
         console.log("pre gg");
-        window.location.href = './pre-gg.html';
-    } else if (rootDomain1 !== "solarsmashonline.com" && rootDomain1 !== "onlinegames.io" &&
+        window.location.href = '/pre-gg.html';
+    } else if (rootDomain1 !== "kickthebuddy.lol" && rootDomain1 !== "onlinegames.io" &&
         rootDomain1 !== "totallyscience.co" && window.self !== window.parent) {
         // Redirect to pre.html if the page is in an iframe and not on the same domain
         console.log("pre");
-        window.location.href = './pre.html';
+        window.location.href = '/pre.html';
     }
 }

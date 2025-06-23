@@ -114,7 +114,7 @@ async function GetMainPageUrl() {
         if (url.startsWith(self.registration.scope))
             url = url.substring(self.registration.scope.length);
 
-        if (url && url !== "/") // ./ is also implicitly cached so don't bother returning that
+        if (url && url !== "/") // / is also implicitly cached so don't bother returning that
         {
             // If the URL is solely a search string, prefix it with / to ensure it caches correctly.
             // e.g. https://example.com/?foo=bar needs to cache as /?foo=bar, not just ?foo=bar.

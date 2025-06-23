@@ -28,6 +28,8 @@
     --pss-results-highlight-bg: #0079f2
 }
 
+
+
 @media (prefers-color-scheme:dark) {
     :root {
         --pss-bg: #191a1f;
@@ -321,12 +323,15 @@ input[type=search]:focus+.pss-results__searchbar__icon {
         background-color: var(--pss-results-highlight-bg);
         color: white
     }
+
     .pss-results__list__link:hover .pss-results__list__title {
         color: var(--pss-results-title-color-hover)
     }
+
     .pss-results__list__link:hover .pss-results__list__text {
         color: var(--pss-results-excerpt-color-hover)
     }
+
     .pss-results__list__link:hover svg {
         fill: var(--pss-results-icon-color-hover)
     }

@@ -595,7 +595,7 @@ var UnityLoader = UnityLoader || {
                             var r, n, o, a = t.length;
                             return e && e.state ? (r = e.state, 0 !== r.wrap && r.mode !== J ? R : r.mode === J && (n = 1, n = g(n, t, a, 0), n !== r.check) ? C : (o = c(e, t, a, a)) ? (r.mode = he, H) : (r.havedict = 1, O)) : R
                         }
-                        var m, b, y = e("../utils/common"),
+                        var m, b, y = e("/utils/common"),
                             g = e("/adler32"),
                             v = e("/crc32"),
                             A = e("/inffast"),
@@ -832,7 +832,7 @@ var UnityLoader = UnityLoader || {
                     },
                     "zlib/inftrees.js": function (e, t, r) {
                         "use strict";
-                        var n = e("../utils/common"),
+                        var n = e("/utils/common"),
                             o = 15,
                             a = 852,
                             i = 592,
@@ -1752,7 +1752,7 @@ var UnityLoader = UnityLoader || {
                 }, n.send()
             }), !0
         }(),
-        stackTraceFormat: navigator.userAgent.indexOf("Chrome") != -1 ? "(\\s+at\\s+)(([\\w\\d_\\.]*?)([\\w\\d_$]+)(/[\\w\\d_\\./]+|))(\\s+\\[.*\\]|)\\s*\\((blob:.*)\\)" : "(\\s*)(([\\w\\d_\\.]*?)([\\w\\d_$]+)(/[\\w\\d_\\./]+|))(\\s+\\[.*\\]|)\\s*@(blob:.*)",
+        stackTraceFormat: navigator.userAgent.indexOf("Chrome") != -1 ? "(\\s+at\\s+)(([\\w\\d_\\.]*?)([\\w\\d_$]+)(/[\\w\\d_\\/]+|))(\\s+\\[.*\\]|)\\s*\\((blob:.*)\\)" : "(\\s*)(([\\w\\d_\\.]*?)([\\w\\d_$]+)(/[\\w\\d_\\/]+|))(\\s+\\[.*\\]|)\\s*@(blob:.*)",
         stackTraceFormatWasm: navigator.userAgent.indexOf("Chrome") != -1 ? "((\\s+at\\s*)\\s\\(<WASM>\\[(\\d+)\\]\\+\\d+\\))()" : "((\\s*)wasm-function\\[(\\d+)\\])@(blob:.*)",
         blobParseRegExp: new RegExp("^(blob:.*)(:\\d+:\\d+)$"),
         getModule: function (e) {
@@ -2239,7 +2239,7 @@ var UnityLoader = UnityLoader || {
                     return e.match(/(http|https|ftp|file):\/\//) ? e : t.substring(0, t.lastIndexOf("/") + 1) + e
                 },
                 streamingAssetsUrl: function () {
-                    return o(this.resolveBuildUrl("../StreamingAssets"))
+                    return o(this.resolveBuildUrl("/StreamingAssets"))
                 },
                 pthreadMainPrefixURL: "Build/"
             },

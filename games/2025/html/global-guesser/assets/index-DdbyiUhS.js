@@ -5113,7 +5113,7 @@ const $4 = () => {
                 key: E,
                 class: "min-w-[250px] h-[80px] rounded-md bg-cover bg-center flex items-center transition-all duration-300 hover:scale-110",
                 style: t3({
-                    backgroundImage: `url(./countryImages/${P.countryMap.toLowerCase()}.png)`
+                    backgroundImage: `url(/countryImages/${P.countryMap.toLowerCase()}.png)`
                 }),
                 onClick: C => p(P)
             }, [w("p", Zo, L1(P.name), 1)], 12, zo))), 128))]))), 128))])])])]))]))
@@ -5214,8 +5214,8 @@ const $4 = () => {
             }, null, -1)])), E[7] || (E[7] = w("p", {
                 class: "text-white text-2xl"
             }, [w("a", {
-                href: "mailto:contact@solarsmashonline.com"
-            }, " contact@solarsmashonline.com ")], -1))])]), i.value ? (X(), Q("div", Uo, [E[8] || (E[8] = w("div", {
+                href: "mailto:contact@kickthebuddy.lol"
+            }, " contact@kickthebuddy.lol ")], -1))])]), i.value ? (X(), Q("div", Uo, [E[8] || (E[8] = w("div", {
                 class: "overlay absolute top-0 left-0 right-0 bottom-0 bg-dark-gray opacity-50"
             }, null, -1)), G1(Io, {
                 updateSettingsState: c,
@@ -11426,7 +11426,7 @@ const n4 = mr(_r),
                 }, [k1("Loading "), w("span", {
                     class: "loader"
                 })], -1)]))) : (X(), Q("div", Ss, [w("div", Ts, [w("div", Es, [w("img", {
-                    src: `./countryImages/${(P = h1(a).countryMap) == null ? void 0 : P.toLowerCase()}.png`,
+                    src: `/countryImages/${(P = h1(a).countryMap) == null ? void 0 : P.toLowerCase()}.png`,
                     alt: "Country Flag",
                     class: "w-full h-full object-cover rounded-2xl"
                 }, null, 8, Ls), w("div", Cs, [w("h3", Is, L1(h1(a).name), 1), w("p", ks, L1(h1(a).shortDescription), 1)])]), w("div", As, [w("button", {
@@ -11588,7 +11588,7 @@ const n4 = mr(_r),
             },
                 K1 = async D => {
                     try {
-                        const I = `./json-countries/${D}.json`,
+                        const I = `/json-countries/${D}.json`,
                             H = await fetch(I);
                         if (!H.ok) throw new Error(`Failed to fetch ${I}`);
                         const n1 = await H.json();
@@ -11621,7 +11621,7 @@ const n4 = mr(_r),
                     try {
                         const D = Y6[Math.floor(Math.random() * Y6.length)];
                         await new Promise(y => setTimeout(y, 500));
-                        const I = await fetch(`./json-countries/${D}.json`);
+                        const I = await fetch(`/json-countries/${D}.json`);
                         if (!I.ok) throw new Error("Failed to fetch country data");
                         const H = await I.json();
                         if (!H.locations || H.locations.length === 0) throw new Error("No locations found in the selected JSON file");

@@ -159,6 +159,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 .horizontalCon .gamesCon #gameDiv:nth-child(1) {
     margin-left: 0%;
 }
@@ -253,4 +255,12 @@
 #games h2 a {
     font-size: 1.1rem;
     margin-left: 10px;
+}
+
+.header {
+    background: black;
+}
+
+.body-background {
+    background-color: rgb(139, 71, 241)
 }

@@ -9,7 +9,7 @@
     'use strict';
     try {
         if (module) self = module
-    } catch (e) {}
+    } catch (e) { }
     self._factory = _f;
     var t;
 
@@ -21,7 +21,7 @@
         function c(d) {
             return a.throw(d)
         }
-        return new Promise(function(d, e) {
+        return new Promise(function (d, e) {
             function f(g) {
                 g.done ? d(g.value) : Promise.resolve(g.value).then(b, c).then(f, e)
             }
@@ -127,14 +127,14 @@
     }
 
     function J(a, b) {
-        a[b + "Async"] = function() {
+        a[b + "Async"] = function () {
             const c = this,
                 d = arguments;
             var e = d[d.length - 1];
             let f;
             E(e) && (f = e, delete d[d.length - 1]);
-            e = new Promise(function(g) {
-                setTimeout(function() {
+            e = new Promise(function (g) {
+                setTimeout(function () {
                     c.async = !0;
                     const h = c[b].apply(c, d);
                     c.async = !1;
@@ -217,7 +217,7 @@
         d || (d = this.search(a, b, c), this.cache.set(a, d));
         return d
     }
-    K.prototype.set = function(a, b) {
+    K.prototype.set = function (a, b) {
         if (!this.cache[a]) {
             var c = this.h.length;
             c === this.l ? delete this.cache[this.h[c - 1]] : c++;
@@ -226,7 +226,7 @@
         }
         this.cache[a] = b
     };
-    K.prototype.get = function(a) {
+    K.prototype.get = function (a) {
         const b = this.cache[a];
         if (this.l && b && (a = this.h.indexOf(a))) {
             const c = this.h[a - 1];
@@ -268,7 +268,7 @@
     };
 
     function ra(a, b, c, d, e, f) {
-        return u(function*() {
+        return u(function* () {
             const g = a(c, JSON.stringify(f));
             g && g.then && (yield g);
             return yield b.export(a, b, c, d, e + 1)
@@ -313,10 +313,10 @@
         this.cache = (b = a.cache) && new K(b)
     }
     t = L.prototype;
-    t.append = function(a, b) {
+    t.append = function (a, b) {
         return this.add(a, b, !0)
     };
-    t.add = function(a, b, c, d) {
+    t.add = function (a, b, c, d) {
         if (b && (a || 0 === a)) {
             if (!d && !c && this.register[a]) return this.update(a, b);
             b = this.encode(b);
@@ -379,7 +379,7 @@
         let h = g ? a.h : a.map;
         if (!b[c] || g && !b[c][g]) a.s && (h = h[d]), g ? (b = b[c] || (b[c] = x()), b[g] = 1, h = h[g] || (h[g] = x())) : b[c] = 1, h = h[c] || (h[c] = []), a.s || (h = h[d] || (h[d] = [])), f && -1 !== h.indexOf(e) || (h[h.length] = e, a.m && (a = a.register[e] || (a.register[e] = []), a[a.length] = h))
     }
-    t.search = function(a, b, c) {
+    t.search = function (a, b, c) {
         c || (!b && D(a) ? (c = a, a = c.query) : D(b) && (c = b));
         let d = [],
             e;
@@ -456,13 +456,13 @@
         c ? (d = d && b > c, a = (a = a[d ? b : c]) && a[d ? c : b]) : a = a[b];
         return a
     }
-    t.contain = function(a) {
+    t.contain = function (a) {
         return !!this.register[a]
     };
-    t.update = function(a, b) {
+    t.update = function (a, b) {
         return this.remove(a).add(a, b)
     };
-    t.remove = function(a, b) {
+    t.remove = function (a, b) {
         const c = this.register[a];
         if (c) {
             if (this.m)
@@ -487,13 +487,13 @@
                     if (h = a[g]) f = O(h, b, c, d, e), d || f || delete a[g]
             }
         else
-            for (let g in a)(f = O(a[g], b, c, d, e)) || delete a[g];
+            for (let g in a) (f = O(a[g], b, c, d, e)) || delete a[g];
         return f
     }
     t.searchCache = oa;
-    t.export = function(a, b, c, d, e) {
+    t.export = function (a, b, c, d, e) {
         const f = this;
-        return u(function*() {
+        return u(function* () {
             let g, h;
             switch (e || (e = 0)) {
                 case 0:
@@ -524,7 +524,7 @@
             return yield ra(a, b || f, c ? c + "." + g : g, d, e, h)
         }())
     };
-    t.import = function(a, b) {
+    t.import = function (a, b) {
         if (b) switch (C(b) && (b = JSON.parse(b)), a) {
             case "cfg":
                 this.s = !!b.opt;
@@ -577,11 +577,11 @@
         this.o = xa(b, c, a.worker);
         this.h = x();
         if (this.o) {
-            if (c) this.o.on("message", function(e) {
+            if (c) this.o.on("message", function (e) {
                 d.h[e.id](e.msg);
                 delete d.h[e.id]
             });
-            else this.o.onmessage = function(e) {
+            else this.o.onmessage = function (e) {
                 e = e.data;
                 d.h[e.id](e.msg);
                 delete d.h[e.id]
@@ -600,14 +600,14 @@
     Q("remove");
 
     function Q(a) {
-        P.prototype[a] = P.prototype[a + "Async"] = function() {
+        P.prototype[a] = P.prototype[a + "Async"] = function () {
             const b = this,
                 c = [].slice.call(arguments);
             var d = c[c.length - 1];
             let e;
             E(d) && (e = d, c.splice(c.length - 1, 1));
-            d = new Promise(function(f) {
-                setTimeout(function() {
+            d = new Promise(function (f) {
+                setTimeout(function () {
                     b.h[++wa] = f;
                     b.o.postMessage({
                         task: a,
@@ -623,12 +623,12 @@
     function xa(a, b, c) {
         let d;
         try {
-            d = b ? eval('new (require("worker_threads")["Worker"])("../dist/node/node.js")') : a ? new Worker(URL.createObjectURL(new Blob(["onmessage=" + va.toString()], {
+            d = b ? eval('new (require("worker_threads")["Worker"])("/dist/node/node.js")') : a ? new Worker(URL.createObjectURL(new Blob(["onmessage=" + va.toString()], {
                 type: "text/javascript"
             }))) : new Worker(C(c) ? c : "worker/worker.js", {
                 type: "module"
             })
-        } catch (e) {}
+        } catch (e) { }
         return d
     };
 
@@ -696,11 +696,11 @@
                 }
                 e.add(f, a, h, !0)
             } else if (a.constructor === Array)
-            for (g = 0; g < a.length; g++) W(a, b, c, d, e, f, g, h);
-        else g = b[++d], W(a, b, c, d, e, f, g, h)
+                for (g = 0; g < a.length; g++) W(a, b, c, d, e, f, g, h);
+            else g = b[++d], W(a, b, c, d, e, f, g, h)
     }
     t = S.prototype;
-    t.add = function(a, b, c) {
+    t.add = function (a, b, c) {
         D(a) && (b = a, a = U(b, this.key));
         if (b && (a || 0 === a)) {
             if (!c && this.register[a]) return this.update(a, b);
@@ -727,13 +727,13 @@
         }
         return this
     };
-    t.append = function(a, b) {
+    t.append = function (a, b) {
         return this.add(a, b, !0)
     };
-    t.update = function(a, b) {
+    t.update = function (a, b) {
         return this.remove(a).add(a, b)
     };
-    t.remove = function(a) {
+    t.remove = function (a) {
         D(a) && (a = U(a, this.key));
         if (this.register[a]) {
             for (var b = 0; b < this.h.length && (this.index[this.h[b]].remove(a, !this.o), !this.m); b++);
@@ -747,7 +747,7 @@
         }
         return this
     };
-    t.search = function(a, b, c, d) {
+    t.search = function (a, b, c, d) {
         c || (!b && D(a) ? (c = a, a = c.query) : D(b) && (c = b, b = 0));
         let e = [],
             f = [],
@@ -793,8 +793,8 @@
         }
         if (r) {
             const l = this;
-            return new Promise(function(p) {
-                Promise.all(r).then(function(z) {
+            return new Promise(function (p) {
+                Promise.all(r).then(function (z) {
                     p(l.search(a, b, c, z))
                 })
             })
@@ -834,20 +834,20 @@
         };
         return b
     }
-    t.contain = function(a) {
+    t.contain = function (a) {
         return !!this.register[a]
     };
-    t.get = function(a) {
+    t.get = function (a) {
         return this.store[a]
     };
-    t.set = function(a, b) {
+    t.set = function (a, b) {
         this.store[a] = b;
         return this
     };
     t.searchCache = oa;
-    t.export = function(a, b, c, d, e) {
+    t.export = function (a, b, c, d, e) {
         const f = this;
-        return u(function*() {
+        return u(function* () {
             e || (e = 0);
             d || (d = 0);
             if (d < f.h.length) {
@@ -872,7 +872,7 @@
             return yield ra(a, f, g, d, e, h)
         }())
     };
-    t.import = function(a, b) {
+    t.import = function (a, b) {
         if (b) switch (C(b) && (b = JSON.parse(b)), a) {
             case "tag":
                 this.l = b;
@@ -983,14 +983,14 @@
         Index: L,
         Document: S,
         Worker: P,
-        registerCharset: function(a, b) {
+        registerCharset: function (a, b) {
             I[a] = b
         },
-        registerLanguage: function(a, b) {
+        registerLanguage: function (a, b) {
             ka[a] = b
         }
     };
-    (Z = X.define) && Z.amd ? Z([], function() {
+    (Z = X.define) && Z.amd ? Z([], function () {
         return Na
     }) : X.exports ? X.exports = Na : X.FlexSearch = Na;
 }(this));
