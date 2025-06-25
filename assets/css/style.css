@@ -918,7 +918,7 @@ textarea {
 }
 
 .header.is-visible {
-    background: var(--white);
+    background-color: black;
     -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .04);
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .04);
     opacity: 1;
@@ -2827,7 +2827,8 @@ textarea {
     grid-template-columns: 100%;
     -ms-grid-rows: auto 2rem auto 2rem auto 2rem auto 2rem auto;
     grid-template-areas: "logo" "nav-1" "nav-2" "nav-3" "newsletter";
-    grid-gap: 2rem
+    grid-gap: 2rem;
+    margin-top: 30px;
 }
 
 @media all and (min-width:30em) {
@@ -3458,6 +3459,7 @@ img.is-loaded {
     border-bottom-right-radius: 3px !important
 }
 
+
 .c-card {
     max-width: 220px !important;
     max-height: 188px !important;
@@ -3577,7 +3579,8 @@ h1.post__title {
 }
 
 .footer__copyright {
-    width: 100% !important
+    width: 100% !important;
+
 }
 
 .container {
@@ -3923,7 +3926,8 @@ center h1 {
 }
 
 .footer__nav li {
-    padding: 10.4px !important
+    padding: 10.4px !important;
+
 }
 
 .footer__nav-3 .h6 {
